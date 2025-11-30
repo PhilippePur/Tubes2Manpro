@@ -32,3 +32,4 @@ echo "<script>alert('Login gagal! username/email atau password salah');
       window.location.href='index.php';</script>";
 
 exit;
+
