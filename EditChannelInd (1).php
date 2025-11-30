@@ -61,7 +61,8 @@ if (isset($_SESSION['uid'])) {
     $stmt = sqlsrv_query($conn, $sql, [$uid]);
 
     if ($stmt && sqlsrv_has_rows($stmt)) {
-        $isAdmin = true; // User sudah jadi admin
+        $isAdmin = true; // User sudah jadi adminn
+        
     } else {
         $deskripsiLama = "Anda Tidak Diperkenankan Mengedit Channel Ini !";
         $canEdit = false;
@@ -75,7 +76,6 @@ if (isset($_SESSION['uid'])) {
 <head>
     <title>Make Channel</title>
 </head>
-
 
 <body>
     <div data-layer="Profile & Update Channel" class="ProfileUpdateChannel"
@@ -251,7 +251,6 @@ if (isset($_SESSION['uid'])) {
         <?php endif; ?>
 
 
-        
     </div>
     <script>
         function previewFoto(event) {

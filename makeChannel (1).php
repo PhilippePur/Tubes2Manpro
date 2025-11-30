@@ -8,7 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $descChannel = $_POST['description'] ?? '';
     $fotoProfil = null;
 
-    $userId = $_SESSION['uid']; // pastikan user sudah login
+    $userId = $_SESSION['uid']; // pastikan user sudah loginn
+    
 
     if (empty($channelName) || $channelType === '') {
         echo "<script>alert('Nama Channel dan Tipe wajib diisi.'); window.location.href='makeChannel.php';</script>";
@@ -31,11 +32,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-
     // Konversi tipe
     $channelTypeValue = ($channelType === 'Individual') ? 0 : 1;
 
-    // Simpan ke tabel channel
+    // Simpan ke tabel Channel
     $sqlChannel = "INSERT INTO Channel (namaChannel, deskripsi, fotoProfil, channelType)
                OUTPUT INSERTED.IdChannel
                VALUES (?, ?, ?, ?)";
