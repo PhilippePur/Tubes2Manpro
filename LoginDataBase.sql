@@ -124,8 +124,10 @@ INSERT INTO Users (Username, Email, Pass, fotoProfil) VALUES
 ('Dodo','dodo@mail.com', '123456','Assets/Dodo.webp'),
 ('Kapi','kapi@mail.com', '24446666','Assets/kapibara.jpg'),
 ('Kipikapi','kipi.kapi@mail.com', '3456', 'Assets/kapibara.jpg'),
-('Kopiki','kopiki@mail.com', '4789', 'Assets/kapibara.jpg');
-
+('Kopiki','kopiki@mail.com', '4789', 'Assets/kapibara.jpg'),
+('Davin' , 'davin@mail.com', '111111', 'Assets/Dodo.webp'),
+('Felix' , 'felix@mail.com', '222222', 'Assets/kapibara.jpg'),
+('Philip' , 'philip@mail.com', '333333', 'Assets/Wombat.jpg');
 
 
 -- Roles
@@ -171,5 +173,3 @@ SELECT * FROM Tonton
 SELECT * FROM Roles
 SELECT * FROM Subscribe
 
-
-SELECT R.RoleName FROM [Admin] A INNER JOIN Roles R ON A.idRole = R.idRole WHERE idUser = 7
