@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register'])) {
         exit;
     }
 
+    
     // Cek username/email sudah dipakai
     $sqlCheck = "SELECT username FROM Users WHERE username = ? OR email = ?";
     $paramsCheck = [$username, $email];
