@@ -8,7 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $descChannel = $_POST['description'] ?? '';
     $fotoProfil = null;
 
-    $userId = $_SESSION['uid']; // pastikan user sudah login
+    $userId = $_SESSION['uid']; // pastikan user sudah loginn
+    
 
     if (empty($channelName) || $channelType === '') {
         echo "<script>alert('Nama Channel dan Tipe wajib diisi.'); window.location.href='makeChannel.php';</script>";

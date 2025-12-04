@@ -61,7 +61,8 @@ if (isset($_SESSION['uid'])) {
     $stmt = sqlsrv_query($conn, $sql, [$uid]);
 
     if ($stmt && sqlsrv_has_rows($stmt)) {
-        $isAdmin = true; // User sudah jadi admin
+        $isAdmin = true; // User sudah jadi adminn
+        
     } else {
         $deskripsiLama = "Anda Tidak Diperkenankan Mengedit Channel Ini !";
         $canEdit = false;

@@ -10,7 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Permintaan tidak valid.";
         exit;
     }
+ 
 
+    
     // Tentukan status berdasarkan aksi
     switch ($action) {
         case 'accept':
