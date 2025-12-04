@@ -16,7 +16,7 @@ if (isset($_SESSION['uid']) && isset($_SESSION['uname']) && isset($_SESSION['fot
 
     // Lanjutkan dengan logika upload komentar
 } else {
-    // Pengguna belum login, arahkan ke halaman login
+    // Pengguna belum login , arahkan ke halaman login
     header("Location: index.php"); // lebih baik ke index
     exit;
 }
@@ -37,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die(print_r(sqlsrv_errors(), true));
     }
 }
+
 
 
 // Redirect kembali ke halaman video
