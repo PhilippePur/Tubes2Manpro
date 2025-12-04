@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
+
 // Redirect kembali ke halaman video
 header("Location: PageView.php?id=" . urlencode($idVideo));
 exit;

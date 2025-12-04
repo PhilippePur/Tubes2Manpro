@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'testsql.php'; // koneksi ke SQL Server
+require_once 'testsql.php'; // koneksi ke SQL server
 
 $uid = $_SESSION['uid'];
 $sql = "SELECT 
@@ -10,6 +10,7 @@ $sql = "SELECT
         INNER JOIN [Admin] A ON A.idUser = U.idUser
         INNER JOIN Channel C ON C.idChannel = A.idChannel
         WHERE U.idUser = ?";
+
 
 $params = [$uid];
 $stmt = sqlsrv_query($conn, $sql, $params);
