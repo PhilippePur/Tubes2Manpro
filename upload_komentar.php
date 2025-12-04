@@ -16,7 +16,7 @@ if (isset($_SESSION['uid']) && isset($_SESSION['uname']) && isset($_SESSION['fot
 
     // Lanjutkan dengan logika upload komentar
 } else {
-    // Pengguna belum login, arahkan ke halaman login
+    // Pengguna belum login , arahkan ke halaman login
     header("Location: index.php"); // lebih baik ke index
     exit;
 }
