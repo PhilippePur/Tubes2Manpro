@@ -250,5 +250,5 @@ $channelID = $channelInfo['idChannel'];
         }
     </script>
 </body>
-
+<!-- ini adalah integrasi edit video -->
 </html>
