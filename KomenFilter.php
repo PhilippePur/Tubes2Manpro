@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['idKomen'])) {
     }
 }
 
-//  Bagian Filter dan Pengambilan Data Komentar 
+//  Bagian filter dan Pengambilan Data Komentar 
 $keyword = $_GET['keyword'] ?? '';
 $date = $_GET['date'] ?? '';
 $channelID = $_GET['idChannel'] ?? '';
